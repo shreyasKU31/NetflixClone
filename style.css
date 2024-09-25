@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --red:#e50914;
+}
+
+body{
+    background-color: #000;
+    font-family: "Martel Sans", sans-serif;
+}
+.hero{
+    width: 100%;
+    height: 45rem;
+    background-image: url(./Assets/bg.jpg);
+    background-position: start bottom center;
+}
+.heroCont{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, black,rgba(0, 0, 0, 0.185),black);
+}
+nav{
+    width: 100%;
+    height:fit-content;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+
+.opt{
+    display: flex;
+    border: 0.5px solid white;
+    border-radius: 4px;
+    padding: 4px 8px;
+    gap: 4px;
+}
+.opt select{
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: white;
+    background-color: transparent;
+}
+.opt select option{
+    color: #000;
+}
+.fa-solid{
+    color: aliceblue;
+}
+
+
+
+nav .logo img{
+    width: 9.2rem;
+    height: 2.5rem;
+}
+.navRight{
+    display: flex;
+    height: 100%;
+    gap: 20px;
+}
+
+.login button{
+    background-color: var(--red);
+    padding: 10px 15px;
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-radius: 4px;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+.fa{
+    color: aliceblue;
+    width: 20px;
+}
+.center{
+    display: flex;
+    align-items: center;
+    height: 80%;
+    gap: 2rem;
+}
+.center h1,.enjoy h2{
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 4rem;
+}
+.center p,.enjoy p{
+    font-size: 1.5rem;
+}
+.center button{
+    background-color: var(--red);
+    padding: 12px 16px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+}
+
+.ctrText{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #c30a13;
+}
+.space{
+    width: 100%;
+    height: 8px;
+    background: #303030;
+}
+
+/* ------------------------------enjoyTv ------------------------------*/
+
+.enjoyTv{
+    width: 100%;
+    height: 40rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 4%;
+    position: relative;
+}
+
+.enjoy{
+    width: 50%;
+    padding: 5%;
+}
+.tvImg{
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+
+
+.tvImg img{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+video{
+    width: 100%;
+    height: 100%;
+}
+
+.nextVid{
+    width: 470px;
+    height: 400px;
+    position: relative;
+}
+
+.nextVid video{
+    width: 68%;
+    height: 100%;
+    position: absolute;
+    left: 75px;
+    top: -71px;
+    z-index: -1;
+}
+
+.faqPage{
+    width: 100%;
+    height: auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.heading h2{
+    padding: 1rem;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 4rem;
+}
+
+.faq{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+.qna{
+    width: 80%;
+    background-color: #414141;
+    padding: 24px;
+    transition: all 0.5s ease;
+}
+.qna:hover{
+    background-color: #2d2d2d;
+}
+.qn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 24px;
+    font-weight: 400;
+}
+.ans{
+    background-color: rgba(255, 255, 255, 0.232);
+    position: absolute;
+    left: 0;
+    top: 75px;
+    padding: 1rem 2rem;
+    visibility:hidden;
+}
+
+.inputEmail{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    padding: 24px;
+}
+.inputEmail input{
+    padding: 16px 24px;
+    background-color: rgba(47, 89, 135, 0.4);
+    border: 2px solid white;
+    border-radius: 4px;
+    color: white;
+    font-size: 1rem;
+}
+.inputEmail input:focus{
+    border: 2px solid var(--red);
+}
+
+.inputEmail button{
+    background-color: var(--red);
+    padding: 12px 16px;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+}
+
+
+
+
+.inputEmail input::placeholder{
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1024px){
+    .hero,.enjoyTv{
+        height: 35rem;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+    }
+    .center h1,.enjoy h2,.heading h2{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .center p,.enjoy p{
+        font-size: 1.25rem;
+    }
+    .tvImg{
+        width: 300px;
+        height: 300px;
+        position: relative;
+    }
+    .nextVid{
+        width: 350px;
+        height: 300px;
+        position: relative;
+    }
+    .nextVid video{
+        width: 73%;
+        height: 100%;
+        position: absolute;
+        left: 45px;
+        top: -50px;
+        z-index: -1;
+    }
+    .qna{
+        padding: 12px;
+    }
+    .qn p{
+        font-size: 16px;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 600px){
+    .hero,.enjoyTv{
+        height: 30rem;
+    }
+    .center h1,.enjoy h2{
+        font-size: 1.4rem;
+        text-align: center;
+        line-height: 2rem;
+    }
+    .center p,.enjoy p{
+        font-size: 0.8rem;
+        padding-top: 12px;
+    }
+    nav .logo img{
+        width: 5.5rem;
+        height: 1.5rem;
+    }
+    .navRight{
+        display: flex;
+        align-items: center;
+        gap:0px;
+    }
+    .opt,.login button,.center button{
+        transform: scale(0.8);
+    }
+    .opt select{
+        font-size: 0px;
+    }
+    .tvImg{
+        width: 300px;
+        height: 300px;
+        position: relative;
+    }
+    .enjoyTv{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 5%;
+        
+    }
+    .enjoy{
+        width: 100%;
+    }
+    .nextVid{
+        width: 300px;
+        height: 250px;
+        position: relative;
+    }
+    .nextVid video{
+        width: 68%;
+        height: 100%;
+        position: absolute;
+        left: 50px;
+        top: -40px;
+        z-index: -1;
+    }
+    .inputEmail{
+        flex-direction: column;
+        align-items: center;
+    }
+    .inputEmail input{
+        width: 80%;
+    }
+    .inputEmail button {
+        width: 50%;
+    }
+}
